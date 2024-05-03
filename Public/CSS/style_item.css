@@ -1,0 +1,98 @@
+
+.header
+{
+
+    font-size: 15;
+    width: 95%;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    position: fixed;
+    justify-content: space-between;
+    margin-bottom: 10%;
+    background-color: rgba(0, 0, 0, 0.182);
+}
+
+.header p
+{
+    font-family: cursive;
+    font-size: 30;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar a
+{
+  font-size: 18;
+  margin-right: 100px;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bolder;
+}
+
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../Img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.photos {
+    max-width: 600px; 
+    text-align: center; 
+    
+  }
+  
+  .photos img  {
+    width: 400px;
+    height: 400px;
+    margin: 5%;
+    border: 5px solid rgba(0, 0, 0, 0.114);
+  }
+
+  .photos button 
+  {
+        text-align: center;
+        font-size: 20;
+        margin-bottom: 5%;
+        width: 50%;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.867);
+        color: rgb(9, 2, 2);
+        font-weight: bolder;
+        border: none;
+    
+  }
+  
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+    padding: 10px ;
+    align-items: center;
+  
+  }
+.photos p
+{
+    margin-top: 10%;
+    font-size: 25;
+    color: white;
+}
+
+
+
+
+
+  

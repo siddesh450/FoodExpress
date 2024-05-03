@@ -1,0 +1,130 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.header 
+{
+
+    font-size: 15;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+    justify-content: space-between;
+
+}
+
+.header p
+{
+    font-size: 30;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.Navbar a
+{
+    font-size: 18;
+    margin-left: 60px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+body
+{
+    background-image: url(../Img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+body .main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}   
+
+
+
+.main
+{
+   
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.main    h1
+{
+    font-size: 35px;
+    text-align: center;
+}
+
+.login
+{
+    width: 100%;    
+    height: 40px;   
+    margin: 30px 0px;
+}
+ 
+.login input
+{
+    width: 100%;
+    height: 90%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, 0.936);
+    border-radius: 40px;
+    padding: 20px 20px;
+    font-size: 13;
+    color: whitesmoke;
+    font-weight: bold;
+}   
+
+.login ::placeholder    
+{
+    color: white;
+    font-weight: bold;
+}
+
+.main button
+{
+    width: 100% ;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    border:2px solid rgba(0, 0, 0, 0.141);
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 15;
+}
+
+.main .register
+{
+    font-size: 15;
+    text-align: center;
+    color: white;
+    
+}
+
+.register p a
+{
+    color: white;
+    font-weight:550;
+    margin: 20px 0 15px;
+}   
