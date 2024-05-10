@@ -1,10 +1,11 @@
 const express = require("express")
 const app = express()
+const path = require('path')
 
 app.use(express.json()); // parses JSON bodies
 
-const loginroutes = require("./Server/Routes/login")
-const registerroutes = require("./Server/Routes/register")
+const loginRoutes = require("./Server/Routes/user")
+
 
 //CORS middleware
 app.use(function(req, res, next) {
@@ -14,12 +15,12 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use('/login', loginroutes);
+app.use(express.static(__dirname + "/public"))
+app.get('/', (req, res) => res.sendFile(path.join(__dirname + "/public/index.html")))
 
-app.use('/register', registerroutes);
+app.use('/login', loginRoutes)
 // app.use('/recipe', recipeRoutes)
 
-
-const PORT = process.env.PORT || 5500
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => console.log(`Server started!! Listening on port ${PORT}!!! :)`))
